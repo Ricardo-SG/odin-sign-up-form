@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>The Odin Project sign up Forms exercise!</title>
+
+    <!-- Hey! Why are you using so much ID? Until now, I've been mainly using classes for everything, but all of those elements are moslty unique.
+    I decided to do this exercise using ID instead of classes, Next exercise probably will be different -->
+</head>
+<body>
+    <div id="main-container"> <!-- I like to put everything inside a div instead of body -->
+        <!-- We're gonna have two main columns, left one with the logo and background image and right one with the text and form -->
+        <div id="left-container">
+
+            <div id="logo-container">
+                <!-- I'll leave for later if I need to put div, p or span in the logo and the text-->
+                <img class="logo" src="./images/odin-transparent-logo.png" alt="The Odin Project logo">
+                <span class="logo-text">ODIN</span>
+            </div>
+
+        </div>
+        <div id="right-container">
+            <!-- we've got three sections, top one is just text, middle is the form inputs and validations, and bottom is the buttón to send the form-->
+            <section id="form-section-top" class="grey-bg">
+                <div class="onlytext">
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                    Sign up <i>now</i> to get started.
+                    <br><br>
+                    You <i>know</i> you want to.
+                </div>
+            </section>
+
+            <section id="form-section">
+                    
+                <form action="#">
+                    <div class="formulary">
+                        <p class="form-title">Let's do this!</p>
+                        <div class="input">
+                            <label for="first-name">First name</label>
+                            <input type="text" name="first-name" id="first-name" required>
+                        </div>
+                        
+                        <div class="input">
+                            <label for="last-name">Last name</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                        
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        
+                        <div class="input">
+                            <label for="phone-number">Phone number</label>
+                            <input type="text" name="phone-number" id="phone-number" minlength="9" maxlength="9">
+                        </div>
+                        
+                        <div class="input">
+                            <label for="password">Password</label>
+                            <input type="password" name="passwor" id="passwor" required>
+                        </div>
+                        
+                        <div class="input">
+                            <label for="confirm-password">Confirm password</label>
+                            <input type="password" name="confirm-password" id="confirm-password" required>
+                        </div>
+                    </div>
+
+                </form>
+                
+            </section>
+            <section id="form-section-bot" class="grey-bg">
+                <div class="form-button">
+                    <button id="form-action-button" type="submit">Create Account</button> 
+                </div>
+                <div class="login-text">
+                    Already have an account? <a href="#" class="green-link">Log in.</a>  
+                </div>
+            </section>
+
+        </div>
+        
+    </div>
+
+</body>
+</html>

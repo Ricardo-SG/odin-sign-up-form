@@ -1,0 +1,156 @@
+:root {
+    --bg-h:1030px;
+    --bg-w:687px;
+}
+* {
+    
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+    font-family:norse-bold;
+    src:url("./fonts/Norse-Bold.otf");
+}
+body {
+    background-color: rgb(245, 246, 255);
+    min-width:600px;
+}
+
+#main-container {
+    display:flex;
+    width: 100%;  
+    min-width:600px;
+    height:100vh;
+    flex-shrink: 0;
+}
+
+#left-container {
+    height:100%;
+    width:40vw;
+    max-width:var(--bg-w);
+    max-height:var(--bg-h);
+    min-width:450px;
+    background-image: url("./images/leafBackground.avif");
+    background-size: auto;
+    background-repeat: no-repeat;
+
+}
+
+#logo-container {
+    display:flex;
+    position:relative;
+    justify-content: center;
+    align-items:center;
+
+    width:100%;
+
+    top:20%;
+    height:20%;
+    background-color: rgba(0, 0, 0, 0.418);
+    
+}
+
+.logo {
+    height: 80%
+}
+.logo-text {
+    
+    font-family: norse-bold, sans-serif;
+    color:white;   
+    font-size:10rem;
+    margin-left:10px;
+
+
+}
+
+#right-container {
+    height:100%;
+    width:60vw;
+    max-height:var(--bg-h);
+    max-width:800px;
+    min-width:400px;
+}
+
+#form-section-top {
+    display:flex;
+    align-items: flex-end;
+    padding-bottom: 2vh;
+    padding-left:10px;
+    height:40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight:bold;
+}
+
+
+#form-section {
+    background-color: #596D48;
+    color: #d0e2c0;
+    margin-left:5px;
+}
+
+.formulary {
+    box-shadow: 20px 10px 20px -2px rgb(22, 22, 22);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:20px;
+    margin-left:5px;
+}
+
+.form-title {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    opacity: 50%;
+}
+
+.input input:focus{
+    background-color: rgb(136, 255, 172);
+    
+}
+
+#form-action-button {
+    background-color: #596D48;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 40px 0;
+}
+
+#form-action-button:hover {
+    background-color: #809b69;
+    color: black;
+}
+
+#form-section-bot {
+    display:flex;
+    flex-flow: column wrap;
+    padding-left:20px;
+}
+.green-link {
+    text-decoration: none;
+    color: #596D48;;
+    font-weight: 700;
+}
+
+.green-link:hover {
+    color:#809b69;
+
+}
+
